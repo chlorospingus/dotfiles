@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles including Hyprland, Aylur's GTK Shell, Rofi, Neovim, and Starship.
+My dotfiles including Hyprland, Rofi, Neovim, and Starship.
