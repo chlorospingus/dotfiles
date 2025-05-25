@@ -1,4 +1,3 @@
-return {
-	'andweeb/presence.nvim',
-	lazy = false
+return { 
+    'IogaMaster/neocord',
 }
