@@ -100,7 +100,7 @@ require("neocord").setup({
     terminal_text       = "Using Terminal",           -- Format string rendered when in terminal mode.
 })
 
-vim.keymap.set({'n', 'x', 'o'}, 'z', vim.diagnostic.open_float)
+vim.keymap.set({'n', 'x', 'o'}, ',', vim.diagnostic.open_float)
 vim.keymap.set({'n', 'x', 'o', 'i'}, '<c-s>', "<cmd>up<cr>")
 
 
@@ -154,4 +154,3 @@ vim.cmd([[
 
 	colorscheme catppuccin
 ]])	
-
