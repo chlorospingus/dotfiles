@@ -1,18 +1,28 @@
 require('config.lazy')
 
-vim.lsp.enable("rust_analyzer")
-vim.lsp.enable("jdtls")
-vim.lsp.enable("clangd")
-vim.lsp.enable("csharp_ls")
-vim.lsp.enable("lua_ls")
-vim.lsp.enable("html")
-vim.lsp.enable("ts_ls")
-vim.lsp.enable("css_ls")
-vim.lsp.enable("tinymist")
+vim.lsp.enable({
+    rust_analyzer,
+    jdtls,
+    qmlls,
+    clangd,
+    csharp_ls,
+    lua_ls,
+    html,
+    ts_ls,
+    css_ls,
+    tinymist,
+})
 
 
 vim.keymap.set({'n', 'x', 'o'}, ',', vim.diagnostic.open_float)
 vim.keymap.set({'n', 'x', 'o', 'i'}, '<c-s>', "<cmd>up<cr>")
+
+if vim.g.neovide then
+    vim.g.neovide_padding_top = 6
+    vim.g.neovide_padding_bottom = 6
+    vim.g.neovide_padding_right = 6
+    vim.g.neovide_padding_left = 6
+end
 
 vim.cmd([[
 	no e <c-r>
@@ -46,6 +56,7 @@ vim.cmd([[
 	ino <c-t> <c-o>:
 	cno <c-h> <esc>
 	no + "
+    vn P v`[v`]
 	
 	no <c-f> /
 	nn <enter> :noh<enter>
