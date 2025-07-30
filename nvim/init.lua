@@ -1,16 +1,16 @@
 require('config.lazy')
 
 vim.lsp.enable({
-    rust_analyzer,
-    jdtls,
-    qmlls,
-    clangd,
-    csharp_ls,
-    lua_ls,
-    html,
-    ts_ls,
-    css_ls,
-    tinymist,
+    "rust_analyzer",
+    "jdtls",
+    "qmlls",
+    "clangd",
+    "csharp_ls",
+    "lua_ls",
+    "html",
+    "ts_ls",
+    "css_ls",
+    "tinymist"
 })
 
 
