@@ -10,7 +10,8 @@ vim.lsp.enable({
     "html",
     "ts_ls",
     "css_ls",
-    "tinymist"
+    "tinymist",
+    "gopls"
 })
 
 

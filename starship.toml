@@ -1,5 +1,4 @@
 # Sets user-defined palette
-palette = "catppuccin_mocha"
 
 # Setups
 format="$directory$git_branch$character"
@@ -26,19 +25,19 @@ success_symbol = "[](green bold)"
 error_symbol = "[](pink)"
 
 [directory]
-style = "bg:none fg:{{colors.outline_variant.default.hex}}"
-format = "[]($style)[󱗆 $path](bg:{{colors.outline_variant.default.hex}} fg:{{colors.primary.default.hex}})[ ]($style)"
+style = "bg:none fg:#7A4455"
+format = "[]($style)[󱗆 $path](bg:#7A4455 fg:#C2FDFD)[ ]($style)"
 truncation_length = 3
 truncate_to_repo=false
 
 [git_branch]
-style = "bg:none fg:{{colors.outline_variant.default.hex}}"
-format = "[]($style)[[ ](bg:{{colors.outline_variant.default.hex}} fg:{{colors.primary.default.hex}})$branch](bg:{{colors.outline_variant.default.hex}} fg:{{colors.primary.default.hex}})[ ]($style)"
+style = "bg:none fg:#7A4455"
+format = "[]($style)[[ ](bg:#7A4455 fg:#C2FDFD)$branch](bg:#7A4455 fg:#C2FDFD)[ ]($style)"
 
 [git_status]
 # $all status$ahead_behind
-style = "bg:none fg:{{colors.outline_variant.default.hex}}"
-format = "[]($style)[$all_status$ahead_behind](bg:{{colors.outline_variant.default.hex}} fg:{{colors.primary.default.hex}})[ ]($style)"
+style = "bg:none fg:#7A4455"
+format = "[]($style)[$all_status$ahead_behind](bg:#7A4455 fg:#C2FDFD)[ ]($style)"
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
@@ -54,8 +53,8 @@ deleted = "${count}"
 [cmd_duration]
 min_time = 1
 # duration & style 
-style = "bg:none fg:{{colors.outline_variant.default.hex}}"
-format = "[]($style)[$duration](bg:{{colors.outline_variant.default.hex}} fg:{{colors.primary.default.hex}})[]($style)"
+style = "bg:none fg:#7A4455"
+format = "[]($style)[$duration](bg:#7A4455 fg:#C2FDFD)[]($style)"
 disabled = false
 
 [palettes.catppuccin_mocha]
