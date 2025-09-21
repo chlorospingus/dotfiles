@@ -8,10 +8,12 @@ vim.lsp.enable({
     "csharp_ls",
     "lua_ls",
     "html",
+    "pylsp",
+    "pylint",
     "ts_ls",
     "css_ls",
     "tinymist",
-    "gopls"
+    "dartls"
 })
 
 
@@ -35,10 +37,8 @@ vim.cmd([[
 	no I A
 	no k o
 	no j J
-	no m q
-	no M Q
-	no q t
-	no Q T
+	no - t
+	no _ T
 
 	no h <left>
 	no t <up>
@@ -56,8 +56,6 @@ vim.cmd([[
 	no <c-t> :
 	ino <c-t> <c-o>:
 	cno <c-h> <esc>
-	no + "
-    vn P v`[v`]
 	
 	no <c-f> /
 	nn <enter> :noh<enter>
