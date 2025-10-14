@@ -35,10 +35,12 @@ vim.cmd([[
 	no i a
 	no A I
 	no I A
-	no k o
 	no j J
-	no - t
-	no _ T
+    no J <Up>j
+    no f f
+    no F t
+    no k F
+    no K T
 
 	no h <left>
 	no t <up>
@@ -56,6 +58,7 @@ vim.cmd([[
 	no <c-t> :
 	ino <c-t> <c-o>:
 	cno <c-h> <esc>
+    nn * o$  $<Left><Left>
 	
 	no <c-f> /
 	nn <enter> :noh<enter>
@@ -73,5 +76,6 @@ vim.cmd([[
 	colorscheme catppuccin
 ]])
 
-vim.api.nvim_set_hl(0, "Pmenu", { bg = nil })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = nil })
+vim.api.nvim_set_hl(0, "Pmenu", { bg = nil, force = true })
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = nil, force = true })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = nil, force = true })

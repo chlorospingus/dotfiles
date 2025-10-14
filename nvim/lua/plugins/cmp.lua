@@ -39,13 +39,6 @@ return {
 					"kind",
 				} }
 			},
-			components = {
-				label = {
-					text = {
-						background = "#ffffff"
-					},
-				}
-			}
 		},
 		documentation = {
 			auto_show = true,
