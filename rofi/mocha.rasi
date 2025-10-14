@@ -1,0 +1,134 @@
+* {
+	bg-col:			#1e1e2e;
+    bg-col-light:	#313244;
+	bg-col-dark:	#11111b;
+    border-col:		#89b4fa;
+    selected-col:	#1e1e2e;
+    highlight:		#c27dd6;
+    fg-col:			#cdd6f4;
+    fg-col2:		#f38ba8;
+    grey:			#6c7086;
+
+    font:			"comfortaa 14";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color:	inherit;
+    text-color:			inherit;
+	vertical-align:		0.5;
+}
+
+window {
+	width:				699px;
+	margin:				60px 0 0 0;
+	location:			north;
+    border:				3px;
+	border-radius:		16px;
+    border-color:		@highlight;
+    background-color: 	@bg-col;
+}
+
+mainbox {
+    background-color: 	@bg-col;
+	spacing:			16px;
+	margin: 			16px;
+}
+
+inputbar {
+    children:			[icon-search, entry, mode-switcher];
+    background-color:	@bg-col;
+    border-radius:		8px;
+}
+
+icon-search {
+	expand:				false;
+	filename:			"launch";
+	padding:			0 4px 0 4px;
+	background-color:	inherit;
+	size:				24px;
+	width:				24px;
+}
+
+entry {
+    padding:			8px;
+    text-color:			@fg-col;
+    background-color:	@bg-col-dark;
+	margin:				0 8px 0 0;
+	border-radius:		12px;
+}
+
+listview {
+    border:				0;
+    columns:			5;
+    lines:				5;
+    background-color:	@bg-col;
+	layout:				horizontal;
+	flow:				horizontal;
+	position:			center;
+	spacing:			0;
+	dynamic:			true;
+}
+
+element {
+	width:				132px;
+    background-color:	@bg-col;
+	font:				"Rubik 12";
+    text-color:			@fg-col;
+	orientation:		vertical;
+	horizontal-align:	0.5;
+	padding:			0px;
+	border-radius:		12px;
+	border:				none;
+}
+
+element-text {
+	margin:				0;
+	padding:			0 4px 0 4px;
+	horizontal-align:	0.5;
+}
+
+element-icon {
+    size: 64px;
+}
+
+element selected {
+    background-color:	@bg-col-light;
+    text-color:			@fg-col;
+	border:				@fg-col;
+	border-width:		2px;
+}
+
+mode-switcher {
+	margin:			0;
+	padding:		0 -4px 0 -4px;
+	spacing:		0;
+	width:			0;
+}
+
+button {
+	width:				100px;
+	border-radius:		12px;
+    background-color:	@bg-col;
+    text-color:			@grey;
+    vertical-align:		0.5;
+	margin:				0 4px 0 4px;
+	background-color:	@bg-col-dark;
+}
+
+button selected {
+  background-color:		@highlight;
+  text-color:			@bg-col;
+}
+
+message {
+	enabled:			false;
+	background-color:	transparent;
+}
+
+textbox {
+	enabled:			false;
+	background-color:	transparent;
+	font:				"Rukik 1";
+	padding:			0;
+	margin:				0;
+}

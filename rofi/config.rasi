@@ -1,0 +1,36 @@
+configuration {
+    modi: 						"drun";
+    terminal:					"kitty";
+
+    icon-theme:					"BeautyLine";
+    show-icons:					true;
+
+
+    location:					0;
+    sidebar-mode:				false;
+
+	sort:						true;
+    disable-history:			false;
+	matching:					"normal";
+    hide-scrollbar:				true;
+	drun-match-fields:			["name"];
+
+    display-drun:				"Apps";
+	display-recursivebrowser:	"Files";
+	display-emoji:				"Emoji";
+	window-format:              "{t}";
+
+    drun-display-format:		"{name}";
+	emoji-display-format:		"{emoji}";
+
+	kb-row-up:					"";
+	kb-row-down:					"";
+	kb-move-char-back:			"";
+	kb-move-char-forward:		"";
+	kb-mode-next:				"Down";
+	kb-mode-previous:			"Up";
+	kb-element-next:			"Right";
+	kb-element-prev:			"Left";
+}
+
+@theme "mocha"
