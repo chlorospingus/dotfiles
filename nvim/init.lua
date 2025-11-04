@@ -13,7 +13,7 @@ vim.lsp.enable({
     "ts_ls",
     "css_ls",
     "tinymist",
-    "dartls"
+    "bashls"
 })
 
 
@@ -71,6 +71,7 @@ vim.cmd([[
 	set tabstop=4
 	set shiftwidth=4
 	set cmdheight=0
+    set scrolloff=12
 
 	let g:vsnip_snippet_dir = '~/.config/nvim/vsnip'
 	colorscheme catppuccin
