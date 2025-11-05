@@ -9,7 +9,7 @@ return {
 		bg_theme			= "sea",
 		has_line_number		= true,
 		bg_padding 			= 0,
-		code_font_family	= "ComicShannsMono Nerd Font";
+		code_font_family	= "0xProto Nerd Font";
 		mac_window_bar		= false,
 		watermark			= ""
 	}
