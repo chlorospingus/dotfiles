@@ -13,7 +13,8 @@ vim.lsp.enable({
     "ts_ls",
     "css_ls",
     "tinymist",
-    "bashls"
+    "bashls",
+    "dartls"
 })
 
 

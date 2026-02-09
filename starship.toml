@@ -25,19 +25,19 @@ success_symbol = "[](green bold)"
 error_symbol = "[](pink)"
 
 [directory]
-style = "bg:none fg:#20142C"
-format = "[]($style)[󱗆 $path](bg:#20142C fg:#ECE5F0)[ ]($style)"
+style = "bg:none fg:#5E3fba"
+format = "[]($style)[󱗆 $path](bg:#5E3FBA fg:#ffffff)[ ]($style)"
 truncation_length = 3
 truncate_to_repo=false
 
 [git_branch]
-style = "bg:none fg:#20142C"
-format = "[]($style)[[ ](bg:#20142C fg:#ECE5F0)$branch](bg:#20142C fg:#ECE5F0)[ ]($style)"
+style = "bg:none fg:#cd1d48"
+format = "[]($style)[ $branch](bg:#cd1d48 fg:#ffffff)[ ]($style)"
 
 [git_status]
 # $all status$ahead_behind
-style = "bg:none fg:#20142C"
-format = "[]($style)[$all_status$ahead_behind](bg:#20142C fg:#ECE5F0)[ ]($style)"
+style = "bg:none fg:#46789E"
+format = "[]($style)[$all_status$ahead_behind](bg:#46789E fg:#F4E4D8)[ ]($style)"
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
@@ -53,8 +53,8 @@ deleted = "${count}"
 [cmd_duration]
 min_time = 1
 # duration & style 
-style = "bg:none fg:#20142C"
-format = "[]($style)[$duration](bg:#20142C fg:#ECE5F0)[]($style)"
+style = "bg:none fg:#46789E"
+format = "[]($style)[$duration](bg:#46789E fg:#F4E4D8)[]($style)"
 disabled = false
 
 [palettes.catppuccin_mocha]
